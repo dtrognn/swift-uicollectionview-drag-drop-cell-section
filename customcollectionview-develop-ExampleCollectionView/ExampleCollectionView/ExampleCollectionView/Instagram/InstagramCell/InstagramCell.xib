@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InstagramCell" id="gTV-IL-0wX" customClass="InstagramCell" customModule="ExampleCollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awa-Zz-HpF">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="fgZ-QP-Iar">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fgZ-QP-Iar" secondAttribute="trailing" id="9WA-sa-3Ay"/>
+                            <constraint firstItem="fgZ-QP-Iar" firstAttribute="top" secondItem="awa-Zz-HpF" secondAttribute="top" id="Pht-9t-ixd"/>
+                            <constraint firstItem="fgZ-QP-Iar" firstAttribute="leading" secondItem="awa-Zz-HpF" secondAttribute="leading" id="kCn-wx-pj5"/>
+                            <constraint firstAttribute="bottom" secondItem="fgZ-QP-Iar" secondAttribute="bottom" id="ySs-fB-BAZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="awa-Zz-HpF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="10z-8c-Fj4"/>
+                <constraint firstItem="awa-Zz-HpF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UCG-Fh-Om4"/>
+                <constraint firstAttribute="trailing" secondItem="awa-Zz-HpF" secondAttribute="trailing" id="uab-eR-D4v"/>
+                <constraint firstAttribute="bottom" secondItem="awa-Zz-HpF" secondAttribute="bottom" id="vGP-fm-n8V"/>
+            </constraints>
+            <connections>
+                <outlet property="instaImageView" destination="fgZ-QP-Iar" id="F3V-Wh-wZp"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="21"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img2" width="1000" height="648"/>
+    </resources>
+</document>
